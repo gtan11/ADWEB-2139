@@ -1,0 +1,71 @@
+<!-- Interpolation -->
+<h1>{{appName}}</h1>
+
+<!-- ***** One-way Data Binding ***** -->
+<br><hr>
+<h3>1. One-way Data Binding (Interpolation)</h3>
+<p>- String/Number</p>
+
+<!-- Property Binding | String and Number -->
+<input type="text" [value]="clientName">
+<input type="text" [value]="clientNumber">
+
+<br><br>
+<p>- Style</p>
+
+<!-- Style Binding -->
+<p [style.color]="myColor">Text color is styled using style binding.</p>
+
+<br>
+<p>- Property (Binding Images)</p>
+
+<!-- Property Binding | Binding Images -->
+<img [src]="imageUrl" alt="quote by Alan Turing">
+
+<br><br>
+<p>- Class</p>
+
+<!-- Class Binding -->
+<p [class]="appliedClassCSS">This line applied the *myClass* property.</p>
+<p [class.blue]="notappliedClassCSS">While this line does not.</p>
+
+
+<!-- ***** Two-way Data Binding ***** -->
+
+<br><hr>
+<h3>2. Two-way Data Binding</h3>
+<p>- Event/Actions</p>
+
+<!-- Event Binding -->
+<button (click)="showData($event)">Click here</button>
+
+<br><br>
+<p>- Event Binding using getData</p>
+
+
+<!-- Event Binding with console.warn() -->
+<table>
+    <tr>
+        <td>KeyUp Box:</td>
+        <td><input type="text" #keyupbox placeholder="type here" (keyup)="getData(keyupbox.value)"/></td>
+    </tr>
+    <tr>
+        <td>Input Box:</td>
+        <td><input type="text" #keyinputbox placeholder="type here" (input)="getData(keyinputbox.value)"/></td>
+    </tr>
+    <tr>
+        <td>KeyDown Box:</td>
+        <td><input type="text" #keydownbox placeholder="type here" (keydown)="getData(keydownbox.value)"/></td>
+    </tr>
+    <tr>
+        <td>Blur Box:</td>
+        <td><input type="text" #keyblurbox placeholder="type here" (blur)="getData(keyblurbox.value)"/></td>
+    </tr>
+</table>
+
+<br>
+
+<!--
+  Tan, Geoferson Owen
+  WD-302
+-->
