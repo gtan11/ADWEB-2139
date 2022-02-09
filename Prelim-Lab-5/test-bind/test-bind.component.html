@@ -1,0 +1,93 @@
+
+<div id="top">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img [src]="imageUrl" alt="HAU logo" width="15%">
+          </a>
+        </div>
+      </nav>
+</div>
+   
+<div id="input">
+    <br><br>
+    <table>
+        <tr>
+            <td>Student Name: </td>
+            <td><input type="text" [(ngModel)]="studName" /></td>
+        </tr>
+    </table>
+    <br>
+    <table id="studData">
+        <tr>           
+            <th [style.color]="myColor">Subject</th>
+            <th [style.color]="myColor">Prelim</th>
+            <th [style.color]="myColor">Midterm</th>
+            <th [style.color]="myColor">Finals</th>
+        </tr>
+        <tr>            
+            <td><input type="text" [(ngModel)]="subject" #keyblurbox (blur)="getData(keyblurbox.value)" /></td>
+            <td><input type="number" [(ngModel)]="prelim" class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="midterm" class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="final" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="subject1" #keyupbox (blur)="getData(keyupbox.value)" /></td>
+            <td><input type="number" [(ngModel)]="prelim1" class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="midterm1" class="form-control" /></td>
+            <td><input type="number" [(ngModel)]="final1" class="form-control" /></td>
+        </tr>
+    </table>
+</div>
+
+<br><br><hr><br>
+
+<div id="content">
+
+    <h3>Hi! {{studName}}, your grades for school year 2021-2022</h3>
+
+    <table>
+        <tr>
+            <td>
+                <div class="card" style="width: 18rem;">                    
+                    <div class="card-body">
+                      <h4 class="card-title">Subject: {{subject}}</h4>
+                      <hr>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Prelim: {{prelim}}</li>
+                      <li class="list-group-item">Midterm: {{midterm}}</li>
+                      <li class="list-group-item">Final: {{final}}</li>
+                    </ul>                    
+                    <div class="card-body">
+                      <p>Final average: {{((prelim+midterm+final)/3).toFixed(2)}}</p>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+            <td>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h4 class="card-title">Subject: {{subject1}}</h4>
+                      <hr>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Prelim: {{prelim1}}</li>
+                      <li class="list-group-item">Midterm: {{midterm1}}</li>
+                      <li class="list-group-item">Final: {{final1}}</li>
+                    </ul>                    
+                    <div class="card-body">
+                      <p>Final average: {{((prelim1+midterm1+final1)/3).toFixed(2)}}</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br><br>
+
+<div id="footer">
+    <h4 [style.color]="footerColor">6ADWEB | Prelim Lab-5</h4>
+</div>
+
