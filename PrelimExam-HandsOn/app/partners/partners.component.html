@@ -1,0 +1,27 @@
+<br>
+<h3>Below are our Corporate Partners</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Copmany</th>
+            <th>Trademark</th>
+            <th>Sponsor</th>
+            <th>Go to Website</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of partners">
+            <td>{{i.companyName}}</td>
+            <td><img src="{{i.logo}}" alt=""></td>
+            <td>{{i.sponsorType}}</td>
+            <td><a href="{{i.websiteLink}}" target="_blank">View website</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!--
+  Tan, Geoferson Owen
+  WD-302
+-->

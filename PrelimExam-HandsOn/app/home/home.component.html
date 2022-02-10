@@ -1,0 +1,42 @@
+<div class="home-main">
+    <img class="home-img" [src]="imageUrl1" alt="conference background">
+    <div class="home-content">
+      <h1>Research Conferences</h1>
+      <h3>Join our online event this 2022!</h3>
+      <button (click)="showData($event)">Early Bird Registration</button>
+    </div>
+</div>
+
+<hr>
+<h3 style="text-align: center;">Join our Research Conference around the Globe!</h3>
+<hr>
+
+<div id="cards">
+    <table>
+        <tr >
+            <td *ngFor="let spot of cardData">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{spot.cardHead}}" class="card-img-top" alt="..." style="height: 10rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{spot.city}}</h5>
+                        <p class="card-text">{{spot.shortInfo}}</p>
+                        </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{spot.act1}}</li>
+                            <li class="list-group-item">{{spot.act2}}</li>
+                            <li class="list-group-item">{{spot.act3}}</li>
+                        </ul>
+                    <div class="card-body">
+                    <a href="{{spot.link}}" class="card-link" target="_blank">Learn more</a>
+                </div>
+              </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  
+<!--
+  Tan, Geoferson Owen
+  WD-302
+-->

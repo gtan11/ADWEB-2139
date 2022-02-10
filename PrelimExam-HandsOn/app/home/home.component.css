@@ -1,0 +1,52 @@
+.home-main {
+    position: relative;
+}
+  
+.home-img {
+    opacity: 0.6;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+  
+.home-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10%;
+}
+  
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#cards > table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card > img {
+    width: auto;
+    display: block;
+    height: auto;
+}
+
+.card-body > a {
+    text-decoration: none;
+}
+
+
+/*
+  Tan, Geoferson Owen
+  WD-302
+*/

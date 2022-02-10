@@ -1,0 +1,25 @@
+<br>
+
+<div id="joinForm">
+    <h3>Fill the form below:</h3>
+    <hr>
+
+    <p>Firstname: <input type="text" [(ngModel)]="Fname" /> Lastname: <input type="text" [(ngModel)]="Lname" /></p>
+    <p>Fullname: {{Fname}} {{Lname}}</p>
+
+    <p>Enter Email Address: <input type="text" [(ngModel)]="email"></p>
+    <p>Email: {{email}}</p>
+    
+    <p>Enter Institution/Affiliation: <input type="text" [(ngModel)]="institution"></p>
+    <p>Academic Institution: {{institution}}</p>
+
+    <br>
+    <button (click)="showData($event)">Submit</button>
+
+</div>
+
+
+<!--
+  Tan, Geoferson Owen
+  WD-302
+-->

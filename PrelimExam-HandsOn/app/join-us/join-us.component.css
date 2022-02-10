@@ -1,0 +1,27 @@
+#joinForm {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+/*
+  Tan, Geoferson Owen
+  WD-302
+*/
