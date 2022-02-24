@@ -1,0 +1,23 @@
+<h4>Product Details</h4>
+
+<div id="details">
+    <table>
+        <tr *ngFor="let item of Products">
+            <td >               
+                <img src="{{item.cardHead}}" alt="..." style="height: auto;width: 20rem;">
+            </td>
+            <td class="details">
+                <h5 class="name">{{item.name}}</h5>
+                <p>ID: {{item.id}}</p>
+                <p class="description">{{item.description}}</p>
+                <button class="button">+ Add to cart</button>
+            </td>
+            <br>
+        </tr>
+    </table>
+</div>
+
+<!--
+    Tan, Geoferson Owen
+    WD-302
+-->

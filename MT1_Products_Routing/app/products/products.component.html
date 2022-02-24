@@ -1,0 +1,26 @@
+<h4>Products</h4>
+
+<div id="cards">
+    <table>
+        <tr *ngFor="let item of Products">
+            <td >
+                <a routerLink="{{item.link}}" class="card-link">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{item.cardHead}}" class="card-img-top" alt="...">
+                        <div class="card-body">                        
+                                <h5 class="card-title">{{item.name}}</h5>
+                                <p>ID: {{item.id}}</p>
+                                <p>View Details</p>                        
+                        </div>                            
+                    </div>              
+                </a>
+            <br>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!--
+    Tan, Geoferson Owen
+    WD-302
+-->
