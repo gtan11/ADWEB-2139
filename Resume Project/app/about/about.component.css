@@ -1,0 +1,29 @@
+table, h3, h5, p, hr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3 {
+    text-align: center;
+}
+
+table > tr > td > img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    float: right;
+}
+
+#skills > table, td {    
+    margin-left: 15%;
+    margin-right: 15%;
+    border-collapse: collapse;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
