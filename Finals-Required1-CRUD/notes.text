@@ -1,0 +1,30 @@
+Make sure to run the following:
+
+Note:
+1. run mongod
+
+//change directory to
+...\MongoDB\Server\5.0\bin
+
+//then run
+mongod
+
+
+2. run nodemon index.js
+
+//change directory to
+...\mean-crud\node-rest-api\node-backend
+
+//then run
+nodemon index.js
+
+
+3. run ng serve
+
+//change directory to the project directory
+...\mean-crud
+
+//then run
+ng serve
+or
+ng serve -o
