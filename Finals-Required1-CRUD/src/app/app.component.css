@@ -1,0 +1,10 @@
+
+.nav {
+    background-color: #700e1d;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
